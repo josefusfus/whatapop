@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="twelve columns">
+
+        <!-- Filtro de recetas -->
+        <label for="filtro-productos">Busca un producto por su nombre</label>
+        <input
+                id="filtro-productos"
+                type="text"
+                placeholder="Pe. Iphone 6s"
+                ng-model="$ctrl.filtroPrductos.name">
+
+        <!-- Lista de recetas -->
+        <table class="u-full-width">
+            <tbody>
+            <tr ng-repeat="producto in $ctrl.productos | filter:$ctrl.filtroProductos | orderBy:'name'">
+                <td>
+                    Aqui va la imagen
+                </td>
+                <td>
+                    {{producto.name}}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

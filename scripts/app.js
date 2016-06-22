@@ -2,7 +2,8 @@
 // Setter
 
 angular.module("whatapop", [
-    "ngComponentRouter"
+    "ngComponentRouter",
+    "dahr.ng-image-picker"
     ]);
 
 angular.module("whatapop").config(function($locationProvider) {

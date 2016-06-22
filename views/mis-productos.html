@@ -14,7 +14,10 @@
             <tbody>
             <tr ng-repeat="producto in $ctrl.productos | filter:$ctrl.filtroProductos | orderBy:'name'">
                 <td>
-                    Aqui va la imagen
+                    <img
+                            ng-src="{{ $ctrl.obtenerRutaImagenProducto(producto.rutaImagenProducto) }}"
+                            width="60"
+                            height="60">
                 </td>
                 <td>
                     {{producto.name}}

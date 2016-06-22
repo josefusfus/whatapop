@@ -27,8 +27,12 @@ angular
 
                     // En la propiedad 'data' de la respuesta HTTP tenemos el cuerpo de la misma.
                     self.productos = respuesta.data;
+                    
                 });
             };
+
+            //Obtenemos la ruta absoluta de la imagen.
+                self.obtenerRutaImagenProducto = ProductService.obtenerRutaImagenAbsolutaProducto;
 
         }
     });

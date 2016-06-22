@@ -7,5 +7,6 @@ angular
     .value("Propiedades", {
         urlServidor:"http://localhost:8000",
         endpointProducts:"/api/products",
-        endpointUsers:"api/users"
+        endpointUsers:"/api/users",
+        endpointImagenes:"/upload"
     });

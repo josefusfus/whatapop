@@ -1,0 +1,12 @@
+
+<div class="text-center margin-bottom">
+    <button ng-click="$ctrl.back()" class="btn btn-default">Volver</button>
+</div>
+
+<section class="col-md-offset-2 col-md-8 detail">
+    <header>
+        <h1 class="text-center">{{ ::$ctrl.producto.name }}</h1>
+        <img class="img-rounded img-responsive" ng-src="{{::$ctrl.getSource($ctrl.producto.photos[0])}}" alt="">
+    </header>
+
+</section>

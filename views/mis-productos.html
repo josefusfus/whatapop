@@ -12,7 +12,7 @@
         <!-- Lista de recetas -->
         <table class="u-full-width">
             <tbody>
-            <tr ng-repeat="producto in $ctrl.productos | filter:$ctrl.filtroProductos | orderBy:'name'">
+            <tr rowspan="10" ng-repeat="producto in $ctrl.productos | filter:$ctrl.filtroProductos | orderBy:'name'"  item="producto" ng-link="['ProductoDetalle',{id: producto.id}]">
                 <td>
                     <img
                             ng-src="{{ $ctrl.obtenerRutaImagenProducto(producto.photos[0]) }}"
